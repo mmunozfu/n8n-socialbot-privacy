@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,63 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Política de Privacidad</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    :root {
+      --primary: #6366f1;
+      --bg: #f9fafb;
+      --text: #111827;
+      --card-bg: #ffffff;
+      --gray: #6b7280;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #f4f6f8;
-      color: #333;
-      line-height: 1.6;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
     }
 
     header {
-      background-color: #0d1117;
-      color: #ffffff;
-      padding: 20px;
+      background: linear-gradient(135deg, var(--primary), #4f46e5);
+      padding: 3rem 1rem 4rem;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
     }
 
     main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-
-    h1 {
-      color: #0d1117;
-      font-size: 2em;
-      border-bottom: 2px solid #eaeaea;
-      padding-bottom: 10px;
+      max-width: 900px;
+      margin: -60px auto 0;
+      padding: 2rem;
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
     }
 
     p {
-      margin-bottom: 16px;
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.7;
     }
 
     footer {
       text-align: center;
-      font-size: 0.9em;
-      color: #888;
-      margin: 40px 0 20px;
+      margin: 3rem 0 1rem;
+      color: var(--gray);
+      font-size: 0.95rem;
     }
 
     @media (max-width: 600px) {
-      main {
-        margin: 20px;
-        padding: 15px;
+      header h1 {
+        font-size: 2rem;
       }
 
-      h1 {
-        font-size: 1.5em;
+      main {
+        margin: -40px 1rem 0;
+        padding: 1.5rem;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Política de Privacidad</h1>
   </header>
@@ -75,7 +86,8 @@
   </main>
 
   <footer>
-    &copy; 2025 n8n-socialbot · Desarrollado por @mmunozfu
+    &copy; 2025 n8n-socialbot · Desarrollado por <strong>@mmunozfu</strong>
   </footer>
+
 </body>
 </html>
